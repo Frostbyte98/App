@@ -6,3 +6,5 @@ PD PROVA DEL NOVE
 
 Si ma abbiamo già sbagliato...
 mmm
+
+ci manca il file .gitignore corrispondente al tipo di progetto. Quando crei la repository, puoi fare aggiungi README e anche aggiungi .gitignore (ce ne sono vari tipi, tra cui quello per un progetto Unity, oppure per un progetto Visual Studio, ecc...)
