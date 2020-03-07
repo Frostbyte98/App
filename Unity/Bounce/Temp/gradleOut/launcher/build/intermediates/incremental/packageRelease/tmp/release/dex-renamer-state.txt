@@ -1,0 +1,4 @@
+#Sat Mar 07 10:44:50 CET 2020
+base.0=/Users/marco/App/Unity/Bounce/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex
