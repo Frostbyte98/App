@@ -10,7 +10,8 @@ public class Block : MonoBehaviour
     private Collider2D col2d;
     private float old_x;
     public Text scoreText;
-    public int score = 50;
+    private int score = 50;
+    private bool counted = false;
 
     private ScoreHero ScoreScript;
     public GameObject player;
@@ -36,25 +37,34 @@ public class Block : MonoBehaviour
 
         float new_x = gameObject.transform.position.x;
 
-        if ((col2d.IsTouching(ball.GetComponent<Collider2D>())) && (new_x==old_x))
+        if ((col2d.IsTouching(ball.GetComponent<Collider2D>())) && (new_x == old_x))
         {
-            Destroy(gameObject, 3);
+
+            Destroy(gameObject, 2);
+           
             //ScoreScript.SetScore(score);
             //scoreText.text = ScoreScript.ToString();
-
+            if (!counted) { 
             player.GetComponent<ScoreHero>().SetScore(score);
             scoreText.text = player.GetComponent<ScoreHero>().GetScore().ToString();
+            counted = true;
+            }
+
 
         }
         
         else if ((this.transform.position.y < -1) && (col2d.IsTouching(ball.GetComponent<Collider2D>())))
         {
             Destroy(gameObject, 1);
+       
             //ScoreScript.SetScore(score);
             //scoreText.text = ScoreScript.ToString();
-
-            player.GetComponent<ScoreHero>().SetScore(score);
-            scoreText.text = player.GetComponent<ScoreHero>().GetScore().ToString();
+            if (!counted)
+            {
+                player.GetComponent<ScoreHero>().SetScore(score);
+                scoreText.text = player.GetComponent<ScoreHero>().GetScore().ToString();
+                counted = true;
+            }
         }
 
         old_x = gameObject.transform.position.x;

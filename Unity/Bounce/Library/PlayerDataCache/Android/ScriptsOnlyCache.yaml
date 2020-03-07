@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - Block
     - Collider
     - MainMenu
+    - MoveBall
     - ScoreHero
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -57,27 +58,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11206}
+      Script: {instanceID: 11190}
     - Class: 114
-      Script: {instanceID: 11412}
+      Script: {instanceID: 11364}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 11974}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 12488}
+      Script: {instanceID: 11960}
     - Class: 114
-      Script: {instanceID: 12862}
+      Script: {instanceID: 12474}
     - Class: 114
-      Script: {instanceID: 13074}
+      Script: {instanceID: 12848}
     - Class: 114
-      Script: {instanceID: 13210}
+      Script: {instanceID: 13062}
     - Class: 114
-      Script: {instanceID: 13442}
+      Script: {instanceID: 13198}
     - Class: 114
-      Script: {instanceID: 13542}
+      Script: {instanceID: 13430}
     - Class: 114
-      Script: {instanceID: 15264}
+      Script: {instanceID: 13530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -126,21 +127,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11206}
+      Script: {instanceID: 11190}
     - Class: 114
-      Script: {instanceID: 11412}
+      Script: {instanceID: 11364}
     - Class: 114
-      Script: {instanceID: 11974}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 12688}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 13074}
+      Script: {instanceID: 11960}
     - Class: 114
-      Script: {instanceID: 13442}
+      Script: {instanceID: 12474}
     - Class: 114
-      Script: {instanceID: 13542}
+      Script: {instanceID: 12674}
     - Class: 114
-      Script: {instanceID: 15264}
+      Script: {instanceID: 13062}
+    - Class: 114
+      Script: {instanceID: 13430}
+    - Class: 114
+      Script: {instanceID: 13530}
+    - Class: 114
+      Script: {instanceID: 18124}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -208,6 +215,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreHero
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -498,7 +511,7 @@ ScriptsOnlyBuild:
     className: NetworkStartPosition
   - hash:
       serializedVersion: 2
-      Hash: 781d2396d8df1305fa905f03d58852b2
+      Hash: a8ca4503a6fdf3e8cd0883c2445e13de
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Block
@@ -750,10 +763,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 9c2738990a6d87b1e79667954fb54cd7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ScoreHero
+    className: MoveBall
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

@@ -244,7 +244,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 2007828967}
   scoreText: {fileID: 1794325619}
-  score: 100
   player: {fileID: 65316349}
 --- !u!1 &29082358
 GameObject:
@@ -549,7 +548,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 2007828967}
   scoreText: {fileID: 1794325619}
-  score: 100
   player: {fileID: 65316349}
 --- !u!1 &303380768
 GameObject:
@@ -785,7 +783,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 2007828967}
   scoreText: {fileID: 1794325619}
-  score: 100
   player: {fileID: 65316349}
 --- !u!61 &666652172
 BoxCollider2D:
@@ -1066,7 +1063,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 2007828967}
   scoreText: {fileID: 1794325619}
-  score: 100
   player: {fileID: 65316349}
 --- !u!1 &1023423339
 GameObject:
@@ -1182,7 +1178,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 2007828967}
   scoreText: {fileID: 1794325619}
-  score: 100
   player: {fileID: 65316349}
 --- !u!61 &1107384709
 BoxCollider2D:
@@ -1307,7 +1302,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 2007828967}
   scoreText: {fileID: 1794325619}
-  score: 100
   player: {fileID: 65316349}
 --- !u!61 &1225809088
 BoxCollider2D:
@@ -1594,7 +1588,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 2007828967}
   scoreText: {fileID: 1794325619}
-  score: 100
   player: {fileID: 65316349}
 --- !u!61 &1559786202
 BoxCollider2D:
@@ -1813,7 +1806,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 0}
   scoreText: {fileID: 0}
-  score: 100
   player: {fileID: 0}
 --- !u!1 &1794325617
 GameObject:
@@ -1849,7 +1841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038147, y: 120}
+  m_AnchoredPosition: {x: 89.6, y: 190.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1794325619
@@ -1883,7 +1875,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 250
 --- !u!222 &1794325620
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1904,6 +1896,7 @@ GameObject:
   - component: {fileID: 2007828969}
   - component: {fileID: 2007828968}
   - component: {fileID: 2007828967}
+  - component: {fileID: 2007828971}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -2012,3 +2005,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2007828971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007828966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3751795270d404300aef9baa2c4919c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2007828967}
+  lifetimeSeconds: 10

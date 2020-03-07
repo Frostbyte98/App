@@ -31,15 +31,21 @@ public class MainMenu: MonoBehaviour {
         }
     }
 
+
     IEnumerator QuitAppDelay()
     {
         loading = true;
         yield return new WaitForSeconds(2);
         Application.Quit();
     }
-    
-    
-    
+
+
+    public void BackApp()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+
     public void SinglePlayer()
       {
         LoadScene(1);
