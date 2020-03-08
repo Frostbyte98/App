@@ -213,7 +213,6 @@ GameObject:
   - component: {fileID: 65316351}
   - component: {fileID: 65316350}
   - component: {fileID: 65316352}
-  - component: {fileID: 65316353}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -299,19 +298,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 65316349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e65425bb5eb835b4fa185d3edb29c1e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &65316353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65316349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fd1ac81a3b7a5f40be629a68d33c1a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ac87a8adf2af6a4dbd4976c7a563d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 2007828966}
@@ -326,8 +313,8 @@ GameObject:
   m_Component:
   - component: {fileID: 151130696}
   - component: {fileID: 151130695}
-  - component: {fileID: 151130694}
   - component: {fileID: 151130697}
+  - component: {fileID: 151130694}
   m_Layer: 0
   m_Name: BloccoBlu (3)
   m_TagString: Untagged
@@ -344,12 +331,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 151130693}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfdb01d9da073f346a64780099a9d372, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b1a3c6f41cbc204591c60b9f67ed247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 0}
   scoreText: {fileID: 1730584938}
-  score: 10
+  score: 100
   player: {fileID: 65316349}
 --- !u!212 &151130695
 SpriteRenderer:
@@ -532,8 +519,8 @@ GameObject:
   m_Component:
   - component: {fileID: 348035520}
   - component: {fileID: 348035519}
-  - component: {fileID: 348035518}
   - component: {fileID: 348035521}
+  - component: {fileID: 348035518}
   m_Layer: 0
   m_Name: BloccoRoss (2)
   m_TagString: Untagged
@@ -550,7 +537,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 348035517}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfdb01d9da073f346a64780099a9d372, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b1a3c6f41cbc204591c60b9f67ed247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 0}
@@ -657,8 +644,8 @@ GameObject:
   m_Component:
   - component: {fileID: 438732762}
   - component: {fileID: 438732761}
-  - component: {fileID: 438732760}
   - component: {fileID: 438732763}
+  - component: {fileID: 438732760}
   m_Layer: 0
   m_Name: BloccoBlu (2)
   m_TagString: Untagged
@@ -675,12 +662,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 438732759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfdb01d9da073f346a64780099a9d372, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b1a3c6f41cbc204591c60b9f67ed247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 0}
   scoreText: {fileID: 1730584938}
-  score: 10
+  score: 100
   player: {fileID: 65316349}
 --- !u!212 &438732761
 SpriteRenderer:
@@ -865,8 +852,8 @@ GameObject:
   m_Component:
   - component: {fileID: 622080811}
   - component: {fileID: 622080810}
-  - component: {fileID: 622080809}
   - component: {fileID: 622080812}
+  - component: {fileID: 622080809}
   m_Layer: 0
   m_Name: BloccoBlu
   m_TagString: Untagged
@@ -883,12 +870,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 622080808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfdb01d9da073f346a64780099a9d372, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b1a3c6f41cbc204591c60b9f67ed247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 0}
   scoreText: {fileID: 1730584938}
-  score: 10
+  score: 100
   player: {fileID: 65316349}
 --- !u!212 &622080810
 SpriteRenderer:
@@ -1322,8 +1309,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1079925578}
   - component: {fileID: 1079925577}
-  - component: {fileID: 1079925576}
   - component: {fileID: 1079925579}
+  - component: {fileID: 1079925576}
   m_Layer: 0
   m_Name: BloccoRoss (1)
   m_TagString: Untagged
@@ -1340,7 +1327,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1079925575}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfdb01d9da073f346a64780099a9d372, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b1a3c6f41cbc204591c60b9f67ed247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 0}
@@ -1687,8 +1674,8 @@ GameObject:
   - component: {fileID: 1505306538}
   - component: {fileID: 1505306537}
   - component: {fileID: 1505306533}
-  - component: {fileID: 1505306534}
   - component: {fileID: 1505306535}
+  - component: {fileID: 1505306534}
   m_Layer: 0
   m_Name: Cesto
   m_TagString: Untagged
@@ -1724,7 +1711,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1505306532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfdb01d9da073f346a64780099a9d372, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b1a3c6f41cbc204591c60b9f67ed247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 0}
@@ -1838,8 +1825,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1565919872}
   - component: {fileID: 1565919871}
-  - component: {fileID: 1565919870}
   - component: {fileID: 1565919873}
+  - component: {fileID: 1565919870}
   m_Layer: 0
   m_Name: BloccoRoss
   m_TagString: Untagged
@@ -1856,7 +1843,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1565919869}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfdb01d9da073f346a64780099a9d372, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b1a3c6f41cbc204591c60b9f67ed247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 0}
@@ -1965,6 +1952,7 @@ GameObject:
   - component: {fileID: 1609732083}
   - component: {fileID: 1609732082}
   - component: {fileID: 1609732085}
+  - component: {fileID: 1609732086}
   m_Layer: 0
   m_Name: BloccoBlu (1)
   m_TagString: Untagged
@@ -1985,8 +1973,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 0}
+  pallaScript: {fileID: 0}
+  col2d: {fileID: 0}
+  objects: []
   scoreText: {fileID: 1730584938}
   score: 10
+  counted: 0
+  ScoreScript: {fileID: 0}
   player: {fileID: 65316349}
 --- !u!212 &1609732083
 SpriteRenderer:
@@ -2078,6 +2071,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.27737, y: 3.1096954}
   m_EdgeRadius: 0
+--- !u!114 &1609732086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609732081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b1a3c6f41cbc204591c60b9f67ed247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 0}
+  scoreText: {fileID: 1730584938}
+  score: 100
+  player: {fileID: 65316349}
 --- !u!1 &1687638635
 GameObject:
   m_ObjectHideFlags: 0
@@ -2636,7 +2645,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2007828966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc59879019f8ec84b97e2e1b6e225abc, type: 3}
+  m_Script: {fileID: 11500000, guid: cd026c7e079cbdd4e88f793296f02034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 2007828967}
@@ -2650,8 +2659,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2008405240}
   - component: {fileID: 2008405239}
-  - component: {fileID: 2008405238}
   - component: {fileID: 2008405241}
+  - component: {fileID: 2008405238}
   m_Layer: 0
   m_Name: BloccoRoss (3)
   m_TagString: Untagged
@@ -2668,7 +2677,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2008405237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfdb01d9da073f346a64780099a9d372, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b1a3c6f41cbc204591c60b9f67ed247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 0}

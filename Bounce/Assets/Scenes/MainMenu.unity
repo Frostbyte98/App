@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 17915329}
   - component: {fileID: 17915328}
   - component: {fileID: 17915327}
-  - component: {fileID: 17915326}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Untagged
@@ -141,22 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &17915326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 17915325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5b9a3fac67431546ac7be3b4879ca9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 17915328}
-  single: {fileID: 287104953}
-  multi: {fileID: 1723249102}
-  quit: {fileID: 1658909140}
 --- !u!58 &17915327
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -340,8 +323,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1753192224}
-        m_MethodName: SinglePlayer
+      - m_Target: {fileID: 1753192225}
+        m_MethodName: enableSingle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -351,13 +334,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1753192227}
-        m_MethodName: enableSingle
-        m_Mode: 1
+      - m_Target: {fileID: 1753192225}
+        m_MethodName: LoadScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5698,6 +5681,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887e4883fa4c7634993a2db1fd5cebd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchPosition: {x: 0, y: 0, z: 0}
+  rb: {fileID: 0}
+  direction: {x: 0, y: 0, z: 0}
+  moveSpeed: 10
 --- !u!95 &1585151790
 Animator:
   serializedVersion: 3
@@ -5820,8 +5807,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1753192224}
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 1753192225}
+        m_MethodName: enableQuit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5831,8 +5818,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1753192227}
-        m_MethodName: enableQuit
+      - m_Target: {fileID: 1753192225}
+        m_MethodName: QuitApp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5986,7 +5973,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1753192224}
+      - m_Target: {fileID: 0}
         m_MethodName: MultiPlayer
         m_Mode: 1
         m_Arguments:
@@ -5997,7 +5984,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1753192227}
+      - m_Target: {fileID: 0}
         m_MethodName: enableMulti
         m_Mode: 1
         m_Arguments:
@@ -6163,9 +6150,7 @@ GameObject:
   - component: {fileID: 1753192222}
   - component: {fileID: 1753192221}
   - component: {fileID: 1753192220}
-  - component: {fileID: 1753192224}
-  - component: {fileID: 1753192226}
-  - component: {fileID: 1753192227}
+  - component: {fileID: 1753192225}
   m_Layer: 5
   m_Name: Screen
   m_TagString: Untagged
@@ -6257,7 +6242,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1080, y: 1919.662}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1753192224
+--- !u!114 &1753192225
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6266,35 +6251,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1753192219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 705981be6341e8f4e8db5a139706ed12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1753192226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753192219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5b9a3fac67431546ac7be3b4879ca9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 17915328}
-  single: {fileID: 287104953}
-  multi: {fileID: 1723249102}
-  quit: {fileID: 1658909140}
---- !u!114 &1753192227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753192219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96ba484d654ba9f4f8532d3e0675c774, type: 3}
+  m_Script: {fileID: 11500000, guid: b6f9551cd475acd4e8ac1bc51276ed36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   single: {fileID: 287104953}
